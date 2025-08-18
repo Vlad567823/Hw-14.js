@@ -187,7 +187,7 @@ const getUsersWithGender = (users, gender) => {
 
 console.log(getUsersWithGender(users, 'male'));
 
-const getInactiveUsers = users.filter(users => users.isActive)
+const getInactiveUsers = users.filter(users => !users.isActive)
 .map(user => user.name)
 
 console.log(getInactiveUsers); 
